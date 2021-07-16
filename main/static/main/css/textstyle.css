@@ -1,0 +1,141 @@
+.lenta1, .lenta2, .lenta3{
+    position: absolute;
+    text-align: center;
+    margin: 30px auto;
+    width: 1350px;
+    font-size: 34px;
+    color: #FDF5E6;
+    text-shadow: 1px 0 1px #000,
+    0 1px 1px #000,
+    -1px 0 1px #000,
+    0 -1px 1px #000;
+}
+
+.jcarousel .lenta2 {
+    font-size: 27px;
+}
+
+.jcarousel .lenta3 {
+    color: #9db1cc;
+    font-size: 25px;
+}
+
+.logo2 {
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 37px;
+    font-weight: 800;
+    color: #ef8b1d;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+}
+
+.logo3,.logo3-2 {
+    margin: 7px;
+    font-size: 18px;
+    text-indent: 30px;
+    text-align:justify;
+    color: #ef8b1d;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+}
+
+.logo4-1, .logo4-2, .logo4-3{
+    margin: 7px;
+    font-size: 23px;
+    text-indent: 30px;
+    text-align:justify;
+    color: #ef8b1d;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+}
+
+
+
+.doc h4 {
+    color: #ef8b1d;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+}
+
+.doc ol li {
+    font-size: 23px;
+    color: #ef8b1d;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+    margin-top: 20px;
+}
+
+.classes {
+    margin: 50px auto 30px;
+}
+
+.class1, .class2, .class3, .class4, .class5{
+    position: absolute;
+    text-align: center;
+    margin: 30px auto;
+    width: 1350px;
+    font-size: 27px;
+    color: #FDF5E6;
+    text-shadow: 2px 0 2px #000,
+    0 2px 2px #000,
+    -2px 0 2px #000,
+    0 -2px 2px #000;
+}
+
+.class1 {
+    color: #ff0000;
+    top: 30px;
+}
+
+.class2 {
+    color: #ff0000;
+    top: 55px;
+}
+
+.class3 {
+    color: #ff0000;
+    top: 70px;
+}
+
+.class4 {
+    color: #ff0000;
+    top: 50px;
+}
+
+.class5 {
+    color: #ff0000;
+    top: 100px;
+}
+
+.Contacts h3 {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.Contacts ul {list-style: none;}
+
+.Contacts ul li {
+    color: #fff;
+    display: block;
+    margin-top: 10px;
+    text-decoration:none;
+}
+
+.Contacts ul li i {
+    margin-right: 7px;
+}

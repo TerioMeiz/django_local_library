@@ -1,0 +1,262 @@
+body {
+/*max-height:200vh;*/
+background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+header .logo {
+    position: absolute; /* Фиксированное положение */
+    right: 8%; /* Расстояние от правого края окна браузера */
+    top: 25%; /* Расстояние сверху */
+    font-weight: bold;
+    font-size: calc(85px + (100 - 50) * ((100vw - 500px) / (1920 - 500)));
+    color: #f5f5f5;
+    transform: rotateX(35deg) rotateZ(1deg);
+    text-shadow: white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px, #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px, #9c9c9c 1px 5px 1px, #9c9c9c 1px 6px 1px, #9c9c9c 1px 7px 1px, #9c9c9c 1px 8px 1px, #9c9c9c 1px 9px 1px, #9c9c9c 1px 10px 1px, #9c9c9c 1px 11px 1px, #9c9c9c 1px 12px 1px, rgba(16, 16, 16, 0.4) 1px 18px 6px, rgba(16, 16, 16, 0.2) 1px 22px 10px, rgba(16, 16, 16, 0.2) 1px 26px 35px, rgba(16, 16, 16, 0.4) 1px 30px 65px, white -0.15em -0.1em 100px;
+    transition: .3s linear;
+}
+span:hover {
+  margin-top: -20px;
+  text-shadow: white 0.006em 0.006em 0.007em, #9c9c9c 1px 1px 1px, #9c9c9c 1px 2px 1px, #9c9c9c 1px 3px 1px, #9c9c9c 1px 4px 1px, #9c9c9c 1px 5px 1px, #9c9c9c 1px 6px 1px, #9c9c9c 1px 7px 1px, #9c9c9c 1px 8px 1px, #9c9c9c 1px 9px 1px, #9c9c9c 1px 10px 1px, #9c9c9c 1px 11px 1px, #9c9c9c 1px 12px 1px, rgba(16, 16, 16, 0.4) 1px 38px 26px, rgba(16, 16, 16, 0.2) 1px 42px 30px, rgba(16, 16, 16, 0.2) 1px 46px 65px, rgba(16, 16, 16, 0.4) 1px 50px 95px, white -0.15em -0.1em 100px;
+}
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.generalinfo {
+    max-width: 100%;
+    width:1600px;
+    height:200px;
+    display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top { /* проверка 1 */
+    background-origin:padding-box;
+    background-image: url("img/kirpich.jpg");
+    background-size: contain;
+    float: left;
+    left: 60px;
+    position: relative;
+    border: 10px solid #995914;
+    width: calc(100px + (600 - 250) * ((100vw - 500px) / (1920 - 500)));
+    height: 150px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #999;
+       -moz-box-shadow: 0 0 5px #999;
+            box-shadow: 0 0 5px #999;
+}
+
+.geninfo {/* проверка 2 */
+    display: block;
+    background-origin:padding-box;
+    background-image: url("img/kirpich.jpg");
+    background-size: contain;
+    float: left;
+    margin: 0px 65px;
+    position: relative;
+    border: 7px solid #995914;
+    width: calc(250px + (1340 - 250) * ((100vw - 500px) / (1920 - 500)));
+    height: 655px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #999;
+       -moz-box-shadow: 0 0 5px #999;
+            box-shadow: 0 0 5px #999;
+
+}
+
+.article { /* проверка 3 */
+    background-origin:padding-box;
+    background-image: url("img/kirpich2.jpg");
+    background-size: contain;
+    float: left;
+    margin: 145px -10px;
+    position: relative;
+    border: 7px solid #995914;
+    width: calc(100px + (600 - 250) * ((100vw - 500px) / (1920 - 500)));
+    height: 500px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #999;
+       -moz-box-shadow: 0 0 5px #999;
+            box-shadow: 0 0 5px #999;
+}
+
+.teachers h1 {margin: 550px auto 30px;}
+
+.windowleft,
+.windowright {
+    display:inline-block;
+    background-origin: padding-box;
+    background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+    position: relative;
+    border: 3px solid #f4a900;
+    width: calc(100px + (800 - 250) * ((100vw - 500px) / (1920 - 500)));
+    height: 118px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #999;
+       -moz-box-shadow: 0 0 5px #999;
+            box-shadow: 0 0 5px #999;
+}
+
+.window img, p {
+    display:inline-block;
+    margin: 1px;
+}
+
+.window img {
+    position: relative;
+    top: -31px;
+}
+
+.windowright {
+    margin: 10px 60px;
+}
+
+.windowleft {
+    margin: 10px 0px 0px 200px;
+}
+
+.events h1 {
+    margin: 50px auto 30px;
+}
+
+.map-and-doc {
+    display:inline-block;
+    background-origin: padding-box;
+    position: relative;
+}
+
+.doc {
+    background-origin:padding-box;
+    background-image: url("img/doc.jpg");
+    background-size: 100% 100%;
+    float:left;
+    border: 7px solid #fff;
+    margin: 0px 0px 0px 100px;
+    width: calc(250px + (600 - 250) * ((100vw - 500px) / (1920 - 500)));
+    height: 500px;
+    -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+            border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #999;
+       -moz-box-shadow: 0 0 5px #999;
+            box-shadow: 0 0 5px #999;
+}
+
+.map {
+    float:right;
+    margin: 0px 30px 0px;
+}
+
+.contacts {
+    background-origin:padding-box;
+    background: #0000ff;
+    border: 2px solid #00008b;
+}
+

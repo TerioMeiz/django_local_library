@@ -1,0 +1,86 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Лицей при ТПУ</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/jcarousel.basic.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'main/css/textstyle.css' %}">
+
+    <script type="text/javascript" src="{% static 'main/js/jquery.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/jquery.jcarousel.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'main/js/jcarousel.basic.js' %}"></script>
+
+</head>
+<body>
+    <header>
+        <img src="{% static 'main/img/welcome3.jpg' %}" alt="welcome" width="100%" height = 540px>
+        <span class="logo">Добро пожаловать !!!</span>
+    </header>
+
+        {% include 'main/shablonlenta.html' %}
+
+    <div class="generalinfo">
+        <div class="top">
+            <span class="logo2">Топ <u><b>19</b></u> по стране</span>
+            <div class="article">
+                    <p class="logo3">   Лицей при Томском политехническом университете занимает 19-е место в списке лучших школ России по конкуренто- способности выпускников, сос- тавленном рейтинговым агентством RAEX (РАЭКС-Аналитика). </p>
+                    <p class="logo3-2"> Каждый год лицей при ТПУ выпускает из своих стен по несколько стобальников по каждому предмету и несколько десятков учеников с баллами, превышающими порог в 90 баллов, что благоприятно сказывается на возможности поступления выпускников в лучшие ВУЗы страны. </p>
+            </div>
+        </div>
+        <div class="geninfo">
+            <p class="logo4-1">Лицей при ТПУ является Региональной инновационной (экспериментальной) площадкой по формированию и развитию ключевых компетенций в процессе обучения старших школьников и Региональной экспериментальной площадкой для осуществления совместных исследований и образовательной практики Центра развития физико-математического образования при ТГПУ по отработке новых технологий адресного сопровождения одаренных детей; учреждение имеет статус муниципальной сетевой образовательной площадки «Олимпиадный тренинг».</p>
+            <p class="logo4-2">С первых дней учебы в лицее приоритетной для ребят становится исследовательская деятельность. И как результат этого - успешное участие в Международных, Всероссийских конференциях и научных конкурсах. 73 лицеиста из 126 выпускников 2017 года занимались исследовательской деятельностью под руководством ученых, аспирантов, магистрантов Томского политехнического университета и учителей лицея при ТПУ.</p>
+            <p class="logo4-3">Каждый год лицеисты из 10 и 11 классов не только занимают призерские места во Всероссийской олимпиаде школьников, но и выигрывают в ней. Математика, физика, информатика, химия, экология, биология, астрономия, экономика, английский язык, литература, русский язык, французский язык, физическая культура – во всех этих предметах лицеисты занимают призерские места и во многих из них побеждают.</p>
+        </div>
+    </div>
+
+    <div class="teachers">
+        <h1>Наш преподавательский состав</h1>
+        {% include 'main/teachers.html' %}
+        {% include 'main/teachers2.html' %}
+        {% include 'main/teachers3.html' %}
+        {% include 'main/teachers4.html' %}
+    </div>
+
+    <div class="events">
+        <h1>У нас не только учаться но и отдыхают</h1>
+        {% include 'main/events.html' %}
+    </div>
+
+    <div class="dopinfo">
+        <div class="map-and-doc">
+            <div class="doc">
+            <h4>Документы, необходимые при поступлении:</h4>
+                <ol>
+                    <li>Паспорт</li>
+                    <li>Аттестат</li>
+                    <li>Заявление (заполняется непосредственно у приёмной комиссии)</li>
+                </ol>
+            </div>
+            <div class="map">
+            {% include 'main/map.html' %}
+            </div>
+        </div>
+        {% include 'main/classes.html' %}
+    </div>
+
+    <div class="Contacts">
+        <h3>Контактная информация</h3>
+        <ul>
+            <a href=""><li><i class="bi bi-geo-alt-fill"></i>Адрес:г.Томск, ул.Аркадия Иванова, 4</li></a>
+            <a href=""><li><i class="bi bi-phone-fill"></i>Телефон директора: x-xxx-xxx-xx-xx</li></a>
+            <a href=""><li><i class="bi bi-phone"></i>Телефон приёмочной комиссии: xx-xx-xx</li></a>
+            <a href=""><li><i class="bi bi-alarm"></i>Время работы приёмочной комиссии: 14:30 - 19:00</li></a>
+        </ul>
+    </div>
+</body>
+</html>

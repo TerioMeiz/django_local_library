@@ -1,0 +1,11 @@
+{% load static %}
+<div class="window">
+<div class="windowleft">
+    <img src={% block imgleft %}{% endblock %} width="100" height="111" alt="">
+    <p>{% block textleft %}{% endblock %}</p>
+</div>
+<div class="windowright">
+    <img src={% block imgright %}{% endblock %} width="100" height="111" alt="">
+    <p>{% block textright %}{% endblock %}</p>
+</div>
+</div>
